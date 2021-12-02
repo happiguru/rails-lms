@@ -28,3 +28,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
