@@ -12,7 +12,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
-group :development, :test, :production do
+group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -29,4 +29,5 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+# gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem "haml-rails", "~> 2.0"
