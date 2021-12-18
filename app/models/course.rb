@@ -21,4 +21,14 @@ class Course < ApplicationRecord
     # def to_s
     #     slug
     # end
+
+    LANGUAGES = [:"English", :"French", :"Latin", :"Arabic"]
+    def self.languages
+        LANGUAGES.map { |language| [language, language] }
+    end
+
+    LEVELS = [:"Beginner", :"Intermediate", :"Advance"]
+    def self.levels
+        LEVELS.map { |level| [level, level] }
+    end
 end
